@@ -6,19 +6,15 @@ using System.Threading.Tasks;
 
 namespace Abstracao
 {
-    class Cao
+    public abstract class Cao
     {
         public string Raca;
 
-        public float Tamanho;
+        public string Nome;
 
         public int Idade;
 
-        public void Latir()
-        {
-            Console.Write("Woof!");
-            Console.Read();
-        }
+        abstract public void Latir();
 
         public void CorrerAtrasDoRabo()
         {

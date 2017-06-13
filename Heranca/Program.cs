@@ -10,20 +10,12 @@ namespace Heranca
     {
         static void Main(string[] args)
         {
-            Humano humano = new Humano();
-
-            humano.Nome = "Linus Torvalds";
-            humano.Idade = 47;
-            humano.Altura = 1.82;
-
+            Humano humano = new Humano("Linus Torvalds",47,1.82);
+            
             humano.Falar();
             humano.Andar();
 
-            Homem homem = new Homem();
-
-            homem.Nome = "Linus Torvalds";
-            homem.Idade = 47;
-            homem.Altura = 1.82;
+            Homem homem = new Homem("Linus Torvalds",47,1.82);
 
             homem.Falar();
             homem.Andar();
