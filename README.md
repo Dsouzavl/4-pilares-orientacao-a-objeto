@@ -153,20 +153,27 @@ Criamos uma classe **Humano** que tem seus métodos e características e um cons
 ```csharp
  public class Homem : Humano
     {
-        //Adicionamos uma propriedade booleana, para dizer se o nosso objeto Homem, tem ou não barba.
+        public Homem(string nome, int idade, double altura):base(nome, idade, altura) {
+        }
+        
         public bool TemBarba { get; set; }
     }
 ```
 
 E agora instânciamos nossos objetos e compreendemos o poder da herança:
 ```csharp
- public class Homem : Humano
-    {
-        public Homem(string nome, int idade, double altura):base(nome, idade, altura) {
+  static void Main(string[] args)
+        {
+            Humano humano = new Humano("Linus Torvalds",47,1.82);
+            
+            humano.Falar();
+            humano.Andar();
+
+            Homem homem = new Homem("Linus Torvalds",47,1.82);
+
+            homem.Falar();
+            homem.Andar();
         }
-        
-        public bool TemBarba { get; set; }
-    }
 ```
 Repare que ambos objetos apresentam as mesmas propriedades, métodos e um construtor, o objeto **Homem** apresenta uma propriedade adicional, pois **Homem** tem características específicas que se estende além das fornecidas do humano.
 
