@@ -148,7 +148,7 @@ A Herança, no mundo da orientação a objeto, segue basicamente o mesmo conceit
     }
 ```
 
-Criamos uma classe **Humano** que tem seus métodos e características e um construtor, que diz: _"Toda vez que for instânciado um **Humano**, é preciso fornecer um **Nome,Idade e Altura**, pois sem isso o objeto não é um **Humano**"_. Se eu precisasse de um objeto **Homem**, ao invés de reescrever esse métodos e propriedades, posso fazê-lo herdar de **Humano**, já que todo homem é um humano, e me preocupar em apenas escrever os métodos e propriedades adicionais, específicas ao objeto **Homem**.
+Criamos uma classe **Humano** que tem seus métodos e características e um construtor, que diz: _"Toda vez que for instânciado um **Humano**, é preciso fornecer um **Nome, Idade e Altura**, pois sem isso o objeto não é um **Humano**"_. Se eu precisasse de um objeto **Homem**, ao invés de reescrever esse métodos e propriedades, posso fazê-lo herdar de **Humano**, já que todo homem é um humano, e me preocupar em apenas escrever os métodos e propriedades adicionais, específicas ao objeto **Homem**.
 
 ```csharp
  public class Homem : Humano
